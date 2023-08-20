@@ -1,104 +1,123 @@
-*{
-    padding: 0%;
-    margin: 0%;
-    font-family: 'Press Start 2P', sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  /* font-family: 'Press Start 2P', sans-serif; */
+  /* font-family: 'Press Start 2P', sans-serif; */
+}
+body {
+  font-family: "Press Start 2P", sans-serif;
+}
+#container {
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  /* border: 1px solid red; */
+  background-color: #222222;
+  /* font-family: 'Press Start 2P', sans-serif; */
+}
+#top {
+  /* border: 1px solid blue; */
+  width: 100%;
+  height: 200px;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  border-bottom: 4px solid white;
+  z-index: 5;
 }
 
-#container{
-    width: 80%;
-    height: 100vh;
-    margin: auto;
-    /* border: 1px solid red; */
-    background-color: #222222;
+#top section {
+  /* border: 1px solid yellow; */
+  height: 200px;
 }
-#top{
-    /* border: 1px solid blue; */
-    width: 100%;
-    height: 200px;
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
-    border-bottom: 4px solid white;
-    z-index: 5;
+#top :nth-child(2) {
+  margin-top: 30px;
+  /* background-color: red; */
+  z-index: 2;
 }
 
-#top section{
-    /* border: 1px solid yellow; */
-    height: 200px;
-}
-#top :nth-child(2){
-    margin-top: 30px;
-    /* background-color: red; */
-    z-index: 2;
+#top :nth-child(2) > h1 {
+  color: white;
+  font-size: x-large;
+  text-align: center;
+  margin-top: 60px;
 }
 
-#top :nth-child(2)>h1{
-    color: white;
+#top :nth-child(2) div {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  margin-top: 35px;
+  border: 1px solid white;
+  background-color: white;
+  color: black;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#again-btn {
+  border: none;
+  margin: 15px 10px;
+  padding: 15px 25px;
+  font-size: large;
+  font-weight: bolder;
+  font-family: "Press Start 2P", sans-serif;
+  cursor: pointer;
+}
+#output{
     font-size: xx-large;
-    text-align: center;
-    margin-top: 60px;
+}
+#bottom {
+  /* border: 1px solid red; */
+  margin-top: 40px;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#check {
+  /* border: 1px solid blue; */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+#check > input {
+  /* background-color: aqua; */
+  background-color: #222222;
+  border: 2px solid white;
+  height: 73px;
+  width: 150px;
+  color: white;
+  text-align: center;
 }
 
-#top :nth-child(2) div{
-    width: 80px;
-    height: 80px;
-    margin: auto;
-    margin-top: 35px;
-    border: 1px solid white;
-    background-color: white;
-    color: black;
-    /* text-align: center; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#bottom{
-    /* border: 1px solid red; */
-    margin-top: 40px;
-    width: 100%;
-    height: 300px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#check{
-    /* border: 1px solid blue; */
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-}
-#check>input{
-    /* background-color: aqua; */
-    background-color: #222222;
-    border: 2px solid white;
-    height: 73px;
-    width: 150px;
-    color: white;
-    text-align: center;
-}
-#check>button{
+#check-btn{
     font-size: larger;
     font-weight: bolder;
     padding: 10px 25px;
+    font-family: "Press Start 2P", sans-serif;
+    cursor: pointer;
+}
+#result {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: start;
+  font-size: large;
+  font-weight: bold;
 }
 
-#result{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    text-align: center;
-    font-size: large;
-    font-weight: bold;
+#result p:nth-child(1) {
+  margin-top: -10px;
+  margin-bottom: 50px;
 }
-
-#result p:nth-child(1){
-    margin-top: -10px;
-    margin-bottom: 50px;
-}
-#result p:nth-child(2){
-    margin-bottom: 20px;
+#result p:nth-child(2) {
+  margin-bottom: 20px;
 }
